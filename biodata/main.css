@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	transition: .5s ease;
+
+}
+body{
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	background-image: url('bg3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+button{
+	color: white;
+	background-color: rgba(200,200,200,0.0);
+	border:none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
+
+#header{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.in-hdr{
+	display: none;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 100vh;
+}
+
+.active{
+	display: flex;
+	border-top: 4px #3076F6 solid;
+}
+#jdl{
+	width: 100vw;
+	margin:0;
+	background-color: rgba(200,200,200,0.0);
+	color: white;
+	height: 55px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: flex-end;
+	font-size: 1.2em;
+	z-index: 1;
+	position: fixed;
+}
+#jdl h1{
+	color: #3076F6;
+	text-shadow: 0 0 3px black;
+	text-align: left;
+	width: 50vw;
+	padding-left: 5%;
+	align-content: center;
+}
+#sosmed{
+	min-width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+	align-items: center;
+	color: white;
+	margin-top: auto;
+}
+.in-sosmed{
+	padding: 4% 0;
+	display: flex;
+	flex: 30%;
+	justify-content: center;
+	align-content: center;
+}
+.in-sosmed:hover{
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 20px 20px 0 0;
+}
+.in-jdl{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	margin: 0;
+	padding:14px;
+	font-size: 20px;
+	min-width: 16%;
+}
+.in-jdl:hover{
+	background-color: white;
+	color:black;
+	border-radius: 0 0 29px 20px;
+}
+
+.half{
+	flex: 20%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	color: white;
+	height: 100%;
+	padding: 0 6%;
+}
+.bhs{
+	margin-top: auto;
+	margin-bottom:2%;
+	display: flex;
+	justify-content:space-between;
+	align-content: center;
+}
+.in-bhs{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+}
+.greeting{
+	padding-top: 10%;
+	margin-top: auto;
+}
+.word{
+	margin-top: auto;
+}
+#skil .half{
+	justify-content: center;
+/*	padding-top: 4%;*/
+	background-color: rgba(200,200,200,0.6);
+	color: black;
+	text-align: center;
+	backdrop-filter:blur(5px);
+	-moz-backdrop-filter:blur(5px);
+}
+#edu .half{
+	justify-content: center;
+/*	padding-top: 4%;*/
+	background-color: rgba(200,200,200,0.6);
+	color: black;
+	text-align: center;
+	backdrop-filter:blur(5px);
+	-moz-backdrop-filter:blur(5px);
+}
+#exp .half{
+	justify-content: center;
+/*	padding-top: 4%;*/
+	background-color: rgba(200,200,200,0.6);
+	color: black;
+	text-align: center;
+	backdrop-filter:blur(5px);
+	-moz-backdrop-filter:blur(5px);
+}
+
+#header #profil h6 {
+	font-size: 5em;
+	padding: 0 5%;
+	line-height: 1.2em;
+	color: #3076F6;
+}
+#header #profil h5 {
+	font-size: 2em;
+	padding: 0 5%;
+	line-height: 2.3em;
+}
+#header #profil h4 {
+	font-size: 1.5em;
+	padding: 0 5%;
+	text-align: justify;
+}
+#edu h1{
+	text-align: center;
+	font-size: 2em;
+}
+#edu h2{
+	text-align: center;
+	font-size: 1.2em;
+}
+#exp h1{
+	text-align: center;
+	font-size: 2em;
+}
+#exp h2{
+	text-align: center;
+	font-size: 1.2em;
+}
+.bhs .in-bhs p strong{
+	font-size: 1em;
+	color: #3076F6;
+}
+.half .word:hover{
+	background-color: rgba(0,0,0,.8);
+	border-radius: 20px;
+} 
+.half p{
+	border-radius: 20px;
+	margin: 15px;
+	text-align: justify;
+}
+
+
+/*animasi*/
+
+@fade{
+	
+}

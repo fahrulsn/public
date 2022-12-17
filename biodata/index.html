@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+	<title>Fahrul Setiawan | 20321158</title>
+</head>
+<body>
+	<div id="header">
+		<div id="jdl">
+			<h1>B I O D A T A</h1>
+			<button class="in-jdl active" onclick="active(event,'profil')">
+				Profile
+			</button>
+			<button class="in-jdl " onclick="active(event,'edu')">
+				Educations
+			</button>
+			<button class="in-jdl " onclick="active(event,'exp')">
+				Experiences
+			</button>
+			<button class="in-jdl " onclick="active(event,'skil')">
+				Skills
+			</button>
+		</div>
+		<div id="profil" class="in-hdr" style="display: flex">
+			<div class="half">
+				<div class="greeting">
+					<h5>Hello I'm </h5>
+					<h6>FAHRUL</h6>
+					<h6>SETIAWAN</h6>
+				</div>
+				<div class="bhs">
+					<div class="in-bhs" style="margin-left: 0;">
+						<p><strong>Hobby   </strong></p>
+					</div>
+					<div class="in-bhs">
+						<img src="hobby.png" style="height: 1.5em">	
+					</div>
+				</div>
+				<div class="bhs" style="margin-top:0">
+					<div class="in-bhs" style="margin-left: 0;">
+						<p><strong>Language</strong></p>
+					</div>
+					<div class="in-bhs" >
+						<p>Indonesia </p>
+						<p>English </p>	
+					</div>
+				</div>
+
+			</div>
+			<div class="half">
+				<div class="word">
+					<p style="font-size: 1.7em">  " I'm very interested on UI/UX,  now I started my study and wanted to be a front-end developer "  </p>
+				</div>
+				<div id="sosmed">
+					<div class="in-sosmed">
+						<img src="ig.png" style="height: 2em; margin-right:3%">
+						<h3>Instagram</h3>
+					</div>
+					<div class="in-sosmed">
+						<img src="fb.png" style="height: 2em; margin-right:3%">
+						<h3>Facebook</h3>
+					</div>	
+					<div class="in-sosmed">
+						<img src="wa.png" style="height: 2em; margin-right:3%">
+						<h3>Whatsapp</h3>
+					</div>		
+				</div>
+			</div>
+			
+		</div>
+		<div id="edu" class="in-hdr" >
+			<div class="half">
+				<h1>MULTIMEDIA</h1><br>
+				<h2>SMK N 3 SURABAYA</h2>
+				<h3>2015 - 2018</h3>
+			</div>
+			<div class="half">
+				<h1>TEKNIK INFORMATIKA</h1><br>
+				<h2>UNIVERSITAS 45 SURABAYA</h2>
+				<h3>2020 - NOW</h3>
+			</div>
+		</div>
+		<div id="exp" class="in-hdr" >
+			<div class="half">
+				<h1>IT SUPPORT STAFF</h1><br>
+				<h2>PT. SINAROZORA LESTARI</h2>
+				<h3>2018 - 2020</h3>
+			</div>
+			<div class="half">
+				<h1>ADMIN DESIGN STAFF</h1><br>
+				<h2>PT. GOLDEN NUSANTARA</h2>
+				<h3>2020 - 2022</h3>
+			</div>
+		</div>
+		<div id="skil" class="in-hdr" >
+			<div class="half">
+				<h2><strong>GRAPHIC DESIGN</strong></h2><br>
+				<h3>CorelDraw</h3>
+				<h3>Adobe Photoshop</h3>
+			</div>
+			<div class="half">
+				<h2><strong>VIDEO EDITING</strong></h2><br>
+				<h3>Vegas Pro</h3>
+				<h3>Adobe After Effect</h3>
+			</div>
+			<div class="half">
+				<h2><strong>WEB PROGRAMMING</strong></h2><br>
+				<h3>HTML</h3>
+				<h3>CSS</h3>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	function active(evt, tabName) {
+		var i, getHdr,getjdl;
+		var getHdr = document.getElementsByClassName("in-hdr");
+		var getjdl = document.getElementsByClassName("in-jdl");
+
+		for (var i = 0; i < getHdr.length ;i++) {
+			getHdr[i].style.display = "none";
+		}
+		for (var i = 0; i < getjdl.length; i++) {
+			getjdl[i].className = getjdl[i].className.replace(" active","");
+		}
+		document.getElementById(tabName).style.display = "flex";
+		evt.currentTarget.className += " active";
+	}
+</script>
+</html>
